@@ -108,6 +108,14 @@ returns
 4. create a table called "Cart" in dyanamo db with primary key as "cartID"
 5. edit the IAM instance profile of AWS Elastic Beanstalk and attach policy to grant AmazonDynamoDBFullAccess, so that Elastic Beanstalk can talk to dynamodb without any configuration.
 
+## Deployed AWS Images
+1. Elastic Beanstalk deployment
+![API](https://github.com/gireeshpolaki/aws-test/blob/main/public/beanstalk.png?raw=true)
+2. AWS DynamoDB table
+![Cart table](https://github.com/gireeshpolaki/aws-test/blob/main/public/dynamodb-table.png?raw=true)
+3. AWS DynamoDB table items
+![table items](https://github.com/gireeshpolaki/aws-test/blob/main/public/table-items.png?raw=true)
+
 ## This code still have the in memory apis
 POST {API_Endpoint_URL}/api/cart/in/additem/
 GET {API_Endpoint_URL}/api/cart/in
